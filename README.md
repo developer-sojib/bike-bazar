@@ -27,7 +27,7 @@
 
 ## 💻 Developed By
 
-![Developer PIC](https://github.com/developer-sojib)
+![Developer PIC](https://avatars.githubusercontent.com/u/79165411?v=4)
 
 ## 🚀 Connect with me
 
