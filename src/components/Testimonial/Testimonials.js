@@ -1,20 +1,16 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import Bounce from 'react-reveal/Bounce';
+// import Bounce from 'react-reveal/Bounce';
 import Fade from 'react-reveal/Fade';
-import "swiper/components/navigation/navigation.min.css";
-import "swiper/components/pagination/pagination.min.css";
-import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper/core';
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper.min.css";
 import Testimonial from './Testimonial';
-SwiperCore.use([Navigation, Pagination, Autoplay]);
+
 
 const Testimonials = () => {
     const [testimonialData, setTestimonialData] = useState([]);
 
     useEffect(() => {
-        axios.get('https://sm-travel-solo.herokuapp.com/testimonials')
+        // axios.get('https://sm-travel-solo.herokuapp.com/testimonials')
+        axios.get('http://localhost:5000/testimonials')
             .then(res => setTestimonialData(res.data))
     }, [])
 
@@ -29,28 +25,34 @@ const Testimonials = () => {
                 </div>
             </Fade>
             {/* testimonials  */}
-            <Swiper
-                loop={true}
-                className="mySwiper py-6"
-                autoplay={{
-                    delay: 4000,
-                    disableOnInteraction: false
-                }}
-                pagination={true} grabCursor={true}
-                slidesPerView={1}
-                speed={600}
-                spaceBetween={20}
-            >
-                {testimonialData.map(item => (
-                    <SwiperSlide key={item.id}>
-                        <Bounce left>
+
+        
+            <div className="max-w-screen-xl mx-auto px-3 relative -top-34">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">      
+                   
+
+            {testimonialData.slice(0, 3).map(item => ( <div class="bg-white rounded-xl p-2 box-border overflow-hidden relative flex flex-col justify-between top-12" key={item.id} >
+                        <blockquote  class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 mt-6 mb-16 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease xl:mb-0">
                             <Testimonial  {...item} />
-                        </Bounce>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+                        </blockquote>
+                        
+                           
+                    </div> 
+                    ))}
+            {testimonialData.slice(3, 100).map(item => ( <div class="bg-white rounded-xl p-2 box-border overflow-hidden relative flex flex-col justify-between top-12" key={item.id} >
+                        <blockquote  class="flex flex-col-reverse items-center justify-between w-full col-span-1 p-6 mt-6 mb-16 text-center transition-all duration-200 bg-gray-100 rounded-lg md:flex-row md:text-left hover:bg-white hover:shadow ease xl:mb-0">
+                            <Testimonial  {...item} />
+                        </blockquote>
+                        
+                           
+                    </div> 
+                    ))}
+
+</div> 
+</div> 
+                    
         </section>
     )
 }
 
-export default Testimonials
+export default Testimonials;

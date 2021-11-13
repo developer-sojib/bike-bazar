@@ -1,0 +1,11 @@
+/* =================== Home Screen =======================*/
+
+.hero-section {
+  background: linear-gradient(#000000c7, #000000bb, #000000c2),
+    url("../../image/home-img.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px;
+}

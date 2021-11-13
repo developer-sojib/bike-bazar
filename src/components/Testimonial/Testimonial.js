@@ -4,10 +4,11 @@ import Rating from 'react-rating';
 
 const Testimonial = ({ username, image, review, rating }) => {
     return (
-        <div className="container px-5 py-12 mx-auto">
-            <div className=" lg:w-3/4 w-full mx-auto text-center bg-gray-50 p-4 shadow-lg rounded-lg">
+        <div class="flex flex-col items-center justify-center max-w-2xl py-2 mx-auto xl:flex-row xl:max-w-full">     
+        <div className="container px-2 py-1 mx-auto">
+            <div className=" lg:w-4/4 w-full mx-auto text-center bg-gray-50 p-4 shadow-lg rounded-lg">
                 <img className="w-12 mx-auto mb-4" src="../../../assets/quote.png" alt="quotes" />
-                <p className="leading-relaxed poppins text-gray-500">{review}</p>
+                <p className="leading-relaxed poppins text-gray-500">{review.slice(0, 180)}</p>
                 <span className="inline-block h-1 w-10 rounded bg-red-400 mt-8 mb-6"></span>
 
                 {/* rating  */}
@@ -28,7 +29,8 @@ const Testimonial = ({ username, image, review, rating }) => {
                 </div>
             </div>
         </div>
+        </div>
     )
 }
 
-export default Testimonial
+export default Testimonial;

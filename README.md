@@ -1,4 +1,4 @@
-# Travel Solo
+# car Bazar
 
 - A full-stack assignment Tourism or delivery website
 
@@ -26,6 +26,7 @@
 - User Authentication, Private Route etc....
 
 ## ScreenShot Homepage
+
 ![sss](https://awesomescreenshot.s3.amazonaws.com/image/2491978/15929104-faedc2e8c86f7f2e2e427f86040917d9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20211031%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211031T095743Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=e0cc34ee37c4957f907d36f976cbed4410e96f297f418bb8dcc7972d54f40133)
 
 ## 💻 Developed By

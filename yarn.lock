@@ -1585,7 +1585,7 @@
 "@firebase/remote-config@0.3.1":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@firebase/remote-config/-/remote-config-0.3.1.tgz#6d7aea2e98527a499a4ee924dac84ea10a90de4a"
-  integrity sha512-31nZ0NEcARw1wYKIpoAx63rA0ao28e9zYNrlSC08mBiouSOxu69lthiO0V1ZrFqR/iW9+7M2MqnOUhJ6/LYEwQ==
+  integrity sha512-31nZ0NEcarw1wYKIpoAx63rA0ao28e9zYNrlSC08mBiouSOxu69lthiO0V1ZrFqR/iW9+7M2MqnOUhJ6/LYEwQ==
   dependencies:
     "@firebase/component" "0.5.7"
     "@firebase/installations" "0.5.2"
@@ -2342,7 +2342,7 @@
 "@types/react@^16.0.40":
   version "16.14.20"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.14.20.tgz#ff6e932ad71d92c27590e4a8667c7a53a7d0baad"
-  integrity sha512-SV7TaVc8e9E/5Xuv6TIyJ5VhQpZoVFJqX6IZgj5HZoFCtIDCArE3qXkcHlc6O/Ud4UwcMoX+tlvDA95YrKdLgA==
+  integrity sha512-SV7TaVc8e9E/5Xuv6TIyJ5VhQpZoVFJqX6IZgj5HZoFCtIDcarE3qXkcHlc6O/Ud4UwcMoX+tlvDA95YrKdLgA==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -3774,7 +3774,7 @@ char-regex@^1.0.2:
 check-types@^11.1.1:
   version "11.1.2"
   resolved "https://registry.yarnpkg.com/check-types/-/check-types-11.1.2.tgz#86a7c12bf5539f6324eb0e70ca8896c0e38f3e2f"
-  integrity sha512-tzWzvgePgLORb9/3a0YenggReLKAIb2owL03H2Xdoe5pKcUyWRSEQ8xfCar8t2SIAuEDwtmx2da1YB52YuHQMQ==
+  integrity sha512-tzWzvgePgLORb9/3a0YenggReLKAIb2owL03H2Xdoe5pKcUyWRSEQ8xfcar8t2SIAuEDwtmx2da1YB52YuHQMQ==
 
 chokidar@^2.1.8:
   version "2.1.8"
@@ -7295,7 +7295,7 @@ jest-mock@^26.6.2:
 jest-pnp-resolver@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/jest-pnp-resolver/-/jest-pnp-resolver-1.2.2.tgz#b704ac0ae028a89108a4d040b3f919dfddc8e33c"
-  integrity sha512-olV41bKSMm8BdnuMsewT4jqlZ8+3TCARAXjZGT9jcoSnrfUnRCqnMoF9XEeoWjbzObpqF9dRhHQj0Xb9QdF6/w==
+  integrity sha512-olV41bKSMm8BdnuMsewT4jqlZ8+3TcarAXjZGT9jcoSnrfUnRCqnMoF9XEeoWjbzObpqF9dRhHQj0Xb9QdF6/w==
 
 jest-regex-util@^26.0.0:
   version "26.0.0"
@@ -11922,7 +11922,7 @@ tsconfig-paths@^3.9.0:
 tslib@^1.8.1, tslib@^1.9.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
-  integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
+  integrity sha512-Xni35NKzjgMrwevysHTcartLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
 tslib@^2, tslib@^2.1.0:
   version "2.3.1"

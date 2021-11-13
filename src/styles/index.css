@@ -23,15 +23,15 @@ body::-webkit-scrollbar {
 
 /* =================== Home Screen =======================*/
 
-.hero-section {
-  background: linear-gradient(#00000059, #000000cf, #0000006b),
-    url('https://images.pexels.com/photos/3601453/pexels-photo-3601453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 900px;
-}
+/* .hero-section {
+    background: linear-gradient(#27242459, #552828cf, #c787876b),
+      url('../image/home-img.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+  } */
 
 /* =================== Register Screen  =======================*/
 .register-screen {
@@ -51,4 +51,8 @@ body::-webkit-scrollbar {
   border: 0px rgba(255, 255, 255, 0.4) solid;
   border-bottom: 0px rgba(40, 40, 40, 0.35) solid;
   border-right: 0px rgba(40, 40, 40, 0.35) solid;
+}
+.mybtn{
+  background:  #FF4676 !important;
+ 
 }

@@ -6,18 +6,22 @@ const TourPackageSection = () => {
     const [toursPack, setToursPack] = useState([]);
 
     useEffect(() => {
-        fetch('https://sm-travel-solo.herokuapp.com/tours')
+        // fetch('https://sm-travel-solo.herokuapp.com/tours')
+        fetch('http://localhost:5000/tours')
             .then(res => res.json())
             .then(data => setToursPack(data))
+            
     }, [])
 
 
 
     return (
         <section className="max-w-screen-xl mx-auto px-6 relative -top-36">
+
+            
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {
-                        toursPack?.map(item => {
+                        toursPack?.slice(0, 6).map(item => {
                             return (
                                 <Fade key={item._id} left>
                                     <TourPackCard {...item} />
@@ -30,4 +34,4 @@ const TourPackageSection = () => {
     )
 }
 
-export default TourPackageSection
+export default TourPackageSection;

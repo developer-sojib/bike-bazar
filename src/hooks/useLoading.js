@@ -1,5 +1,7 @@
 import { css } from "@emotion/react";
-import HashLoader from "react-spinners/HashLoader";
+import { RingLoader } from "react-spinners";
+
+
 
 const override = css`
   display: flex;
@@ -12,7 +14,8 @@ const override = css`
 `;
 
 const useLoading = () => {
-    return <HashLoader color="#ef4444" css={override} size={80} />
+    return <RingLoader color="#FF4676" css={override} size={70} />
+   
 
 }
 

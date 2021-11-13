@@ -3,7 +3,7 @@ import React, { createContext, useState } from 'react';
 export const BookingContext = createContext();
 
 const BookingProvider = ({children}) => {
-    const [allBookings,setAllBookings] = useState([]);
+    const [allBookings, setAllBookings] = useState([]);
 
     //add booking
    const handleBookings = (booking) => {
@@ -36,4 +36,4 @@ const BookingProvider = ({children}) => {
     )
 }
 
-export default BookingProvider
+export default BookingProvider;

@@ -1,26 +1,27 @@
 import React from 'react'
 import { BsCalendar3 } from 'react-icons/bs'
 import { MdGroups } from 'react-icons/md'
-
+//
 const BookingCard = (props) => {
-    const { title, description, image, duration, groupMembers, price, country } = props
+    const { _id, name, img, price, rating,mileage,Dec,vin, engine,fuel_type, images} = props
+    // const { title, description, image, duration, groupMembers, price, country } = props
     return (
         <>
             <div className="py-4 box-border overflow-hidden relative flex flex-col space-y-3">
                 <div>
                     {/* country badge  */}
-                    <div className="absolute top-10 text-sm left-0 z-50 bg-yellow-400 font-primary px-4 py-1 rounded-lg">{country}</div>
+                    <div className="absolute top-10 text-sm left-0 z-50 bg-yellow-400 font-primary px-4 py-1 rounded-lg">{name}</div>
                     {/* image  */}
                     <div className="overflow-hidden rounded-xl h-full w-full">
-                        <img className="transform hover:scale-125 transition duration-700 w-full h-full object-cover" src={image} alt={title} />
+                        <img className="transform hover:scale-125 transition duration-700 w-full h-full object-cover" src={img} alt={name} />
                     </div>
                 </div>
 
                 <div className="flex flex-col flex-grow">
                     {/* title and description */}
                     <div className="flex flex-col space-y-1 my-4">
-                        <h2 className="text-gray-700 font-primary text-base">{title}</h2>
-                        <p className="text-sm text-gray-500">{description}</p>
+                        <h2 className="text-gray-700 font-primary text-base">{name}</h2>
+                        <p className="text-sm text-gray-500">{Dec}</p>
                     </div>
 
                     {/* others info  */}
@@ -30,15 +31,16 @@ const BookingCard = (props) => {
                             <BsCalendar3 className="text-red-500 text-xl" />
                             <div className="flex flex-col">
                                 <p className="text-sm font-primary text-gray-700">Duration</p>
-                                <span className="text-sm text-gray-500">{duration}</span>
+                                <span className="text-sm text-gray-500">{rating}</span>
                             </div>
                         </div>
                         {/* group  */}
                         <div className="flex items-center space-x-3">
                             <MdGroups className="text-red-500 text-2xl" />
                             <div className="flex flex-col">
-                                <p className="text-sm font-primary text-gray-700">Group Size</p>
-                                <span className="text-sm text-gray-500">{groupMembers} peoples</span>
+                                <p className="text-sm font-primary text-gray-700">Size</p>
+                                <span className="text-sm text-gray-500">{engine} eng</span>
+                                <span className="text-sm text-gray-500">{fuel_type} fuel_type</span>
                             </div>
                         </div>
                     </div>
@@ -54,4 +56,4 @@ const BookingCard = (props) => {
     )
 }
 
-export default BookingCard
+export default BookingCard;
